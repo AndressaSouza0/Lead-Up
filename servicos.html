@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços — Lead Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/favicon-180.png" /><link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+<body>
+
+  <div id="loader"><img src="assets/img/logo-transparent.png" alt="Lead Up" class="loader-logo" /></div>
+  <div id="readProgress"></div>
+
+  <nav id="navbar">
+    <div class="nav-logo"><a href="index.html"><img src="assets/img/logo-transparent.png" alt="Lead Up" /></a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="diagnostico.html">Diagnóstico</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle" title="Modo escuro"><span class="theme-icon"><i class="bi bi-moon-stars-fill"></i></span></button>
+      <button id="navHamburger" class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div id="navMobile" class="nav-mobile">
+    <button id="navMobileClose" class="nav-mobile-close"><i class="bi bi-x-lg"></i></button>
+    <ul>
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="sobre.html" class="mobile-link">Sobre</a></li>
+      <li><a href="servicos.html" class="mobile-link">Serviços</a></li>
+      <li><a href="diagnostico.html" class="mobile-link">Diagnóstico</a></li>
+      <li><a href="contato.html" class="mobile-link">Contato</a></li>
+    </ul>
+  </div>
+  <div id="navOverlay" class="nav-overlay"></div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-header-content reveal">
+      <p class="section-label">O que fazemos</p>
+      <h1 class="page-header-title">Nossos Serviços</h1>
+    </div>
+  </div>
+
+  <!-- PACOTES -->
+  <section id="servicos">
+    <div class="reveal" style="text-align:center">
+      <p class="section-label">Pacotes e investimentos</p>
+      <h2 class="section-title">Escolha o formato ideal<br>para o momento da sua empresa</h2>
+      <p class="section-text pacotes-intro">Todos os nossos pacotes combinam 5 pilares — <strong>Diagnóstico</strong>, <strong>Planejamento Estratégico</strong>, <strong>Treinamento de Equipe</strong>, <strong>Acompanhamento e Consultoria</strong> e <strong>Métricas e Resultados</strong>. Contrate um pilar isolado, uma combinação ou o pacote completo — de acordo com a necessidade e o orçamento do seu negócio.</p>
+    </div>
+
+    <p class="section-label pacotes-group-label reveal">Pacotes individuais</p>
+    <div class="pacotes-grid">
+      <div class="pacote-card reveal" style="transition-delay:.1s">
+        <p class="pacote-tag">Diagnóstico</p>
+        <h3 class="pacote-name">Diagnóstico Express</h3>
+        <p class="pacote-price">R$ 990</p>
+        <p class="pacote-period">Pagamento único</p>
+        <p class="pacote-desc">Análise completa da situação atual de marketing da empresa, com relatório de pontos críticos, oportunidades e recomendações iniciais.</p>
+        <ul class="pacote-checklist">
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Diagnóstico</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Planejamento Estratégico</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Treinamento de Equipe</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Acompanhamento e Consultoria</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Métricas e Resultados</li>
+        </ul>
+        <a href="contato.html" class="pacote-cta">Quero esse pacote</a>
+      </div>
+
+      <div class="pacote-card reveal" style="transition-delay:.2s">
+        <p class="pacote-tag">Consultoria</p>
+        <h3 class="pacote-name">Consultoria de Marketing</h3>
+        <p class="pacote-price">R$ 3.000</p>
+        <p class="pacote-period">Pagamento único</p>
+        <p class="pacote-desc">Diagnóstico + plano estratégico personalizado, com metas, canais prioritários e cronograma de ações — pronto para sua equipe executar.</p>
+        <ul class="pacote-checklist">
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Diagnóstico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Planejamento Estratégico</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Treinamento de Equipe</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Acompanhamento e Consultoria</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Métricas e Resultados</li>
+        </ul>
+        <a href="contato.html" class="pacote-cta">Quero esse pacote</a>
+      </div>
+
+      <div class="pacote-card reveal" style="transition-delay:.3s">
+        <p class="pacote-tag">Treinamento</p>
+        <h3 class="pacote-name">Treinamento de Equipe</h3>
+        <p class="pacote-price">R$ 2.500</p>
+        <p class="pacote-period">Pagamento único</p>
+        <p class="pacote-desc">Workshops práticos e simulações reais para capacitar sua equipe a usar ferramentas de marketing digital com autonomia.</p>
+        <ul class="pacote-checklist">
+          <li class="off"><i class="bi bi-dash-circle"></i> Diagnóstico</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Planejamento Estratégico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Treinamento de Equipe</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Acompanhamento e Consultoria</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Métricas e Resultados</li>
+        </ul>
+        <a href="contato.html" class="pacote-cta">Quero esse pacote</a>
+      </div>
+
+      <div class="pacote-card reveal" style="transition-delay:.4s">
+        <p class="pacote-tag">Acompanhamento</p>
+        <h3 class="pacote-name">Acompanhamento Mensal</h3>
+        <p class="pacote-price">R$ 1.800</p>
+        <p class="pacote-period">Por mês</p>
+        <p class="pacote-desc">Consultoria contínua mês a mês, com revisão das ações em andamento e relatório de métricas para ajustes constantes.</p>
+        <ul class="pacote-checklist">
+          <li class="off"><i class="bi bi-dash-circle"></i> Diagnóstico</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Planejamento Estratégico</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Treinamento de Equipe</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Acompanhamento e Consultoria</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Métricas e Resultados</li>
+        </ul>
+        <a href="contato.html" class="pacote-cta">Quero esse pacote</a>
+      </div>
+    </div>
+
+    <p class="section-label pacotes-group-label reveal">Pacotes combinados</p>
+    <div class="pacotes-grid">
+      <div class="pacote-card featured reveal" style="transition-delay:.1s">
+        <span class="pacote-badge">Mais procurado</span>
+        <p class="pacote-tag">Consultoria + Treinamento</p>
+        <h3 class="pacote-name">Consultoria + Treinamento em Marketing</h3>
+        <p class="pacote-price">R$ 5.000</p>
+        <p class="pacote-period">Pagamento único</p>
+        <p class="pacote-desc">O combo ideal para quem quer entender onde está, ter um plano de ação claro e já capacitar a equipe para colocá-lo em prática.</p>
+        <ul class="pacote-checklist">
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Diagnóstico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Planejamento Estratégico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Treinamento de Equipe</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Acompanhamento e Consultoria</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Métricas e Resultados</li>
+        </ul>
+        <a href="contato.html" class="pacote-cta">Quero esse pacote</a>
+      </div>
+
+      <div class="pacote-card reveal" style="transition-delay:.2s">
+        <p class="pacote-tag">Estratégia + Métricas</p>
+        <h3 class="pacote-name">Estratégia com Métricas</h3>
+        <p class="pacote-price">R$ 4.200</p>
+        <p class="pacote-period">Pagamento único</p>
+        <p class="pacote-desc">Plano estratégico completo com indicadores definidos desde o início, para acompanhar resultados com precisão desde o primeiro mês.</p>
+        <ul class="pacote-checklist">
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Diagnóstico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Planejamento Estratégico</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Treinamento de Equipe</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Acompanhamento e Consultoria</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Métricas e Resultados</li>
+        </ul>
+        <a href="contato.html" class="pacote-cta">Quero esse pacote</a>
+      </div>
+
+      <div class="pacote-card reveal" style="transition-delay:.3s">
+        <p class="pacote-tag">Treinamento + Acompanhamento</p>
+        <h3 class="pacote-name">Treinamento + Acompanhamento</h3>
+        <p class="pacote-price">R$ 4.800</p>
+        <p class="pacote-period">Pagamento único</p>
+        <p class="pacote-desc">Capacita a equipe e garante suporte contínuo na aplicação prática, com métricas para validar a evolução mês a mês.</p>
+        <ul class="pacote-checklist">
+          <li class="off"><i class="bi bi-dash-circle"></i> Diagnóstico</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Planejamento Estratégico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Treinamento de Equipe</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Acompanhamento e Consultoria</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Métricas e Resultados</li>
+        </ul>
+        <a href="contato.html" class="pacote-cta">Quero esse pacote</a>
+      </div>
+
+      <div class="pacote-card reveal" style="transition-delay:.4s">
+        <p class="pacote-tag">Plano + Execução</p>
+        <h3 class="pacote-name">Plano + Execução Trimestral</h3>
+        <p class="pacote-price">R$ 6.500</p>
+        <p class="pacote-period">Pagamento único · 3 meses</p>
+        <p class="pacote-desc">Diagnóstico, plano estratégico e acompanhamento por 3 meses para implantar as ações com apoio direto da Lead Up, com relatórios de métricas.</p>
+        <ul class="pacote-checklist">
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Diagnóstico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Planejamento Estratégico</li>
+          <li class="off"><i class="bi bi-dash-circle"></i> Treinamento de Equipe</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Acompanhamento e Consultoria</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Métricas e Resultados</li>
+        </ul>
+        <a href="contato.html" class="pacote-cta">Quero esse pacote</a>
+      </div>
+    </div>
+
+    <p class="section-label pacotes-group-label reveal">Pacotes completos</p>
+    <div class="pacotes-grid pacotes-grid-3">
+      <div class="pacote-card featured reveal" style="transition-delay:.1s">
+        <span class="pacote-badge">Mais completo</span>
+        <p class="pacote-tag">Tudo incluso</p>
+        <h3 class="pacote-name">Pacote Completo</h3>
+        <p class="pacote-price">R$ 9.000</p>
+        <p class="pacote-period">Pagamento único</p>
+        <p class="pacote-desc">Diagnóstico + Estratégia + Treinamento + Acompanhamento + Métricas — do início ao resultado, com a Lead Up ao seu lado em cada etapa.</p>
+        <ul class="pacote-checklist">
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Diagnóstico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Planejamento Estratégico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Treinamento de Equipe</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Acompanhamento e Consultoria</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Métricas e Resultados</li>
+        </ul>
+        <a href="contato.html" class="pacote-cta">Quero esse pacote</a>
+      </div>
+
+      <div class="pacote-card reveal" style="transition-delay:.2s">
+        <p class="pacote-tag">Tudo incluso + 6 meses</p>
+        <h3 class="pacote-name">Pacote Completo Plus</h3>
+        <p class="pacote-price">R$ 14.000</p>
+        <p class="pacote-period">Pagamento único</p>
+        <p class="pacote-desc">Tudo do Pacote Completo, com acompanhamento estendido por 6 meses e revisão trimestral da estratégia conforme os resultados aparecem.</p>
+        <ul class="pacote-checklist">
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Diagnóstico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Planejamento Estratégico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Treinamento de Equipe</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Acompanhamento e Consultoria</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Métricas e Resultados</li>
+        </ul>
+        <a href="contato.html" class="pacote-cta">Quero esse pacote</a>
+      </div>
+
+      <div class="pacote-card reveal" style="transition-delay:.3s">
+        <p class="pacote-tag">Parceria anual</p>
+        <h3 class="pacote-name">Pacote Anual de Crescimento</h3>
+        <p class="pacote-price">R$ 28.000</p>
+        <p class="pacote-period">Ou 12x de R$ 2.490</p>
+        <p class="pacote-desc">Parceria contínua de 12 meses: diagnóstico revisado a cada trimestre, novos treinamentos periódicos e acompanhamento constante para crescimento sustentável.</p>
+        <ul class="pacote-checklist">
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Diagnóstico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Planejamento Estratégico</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Treinamento de Equipe</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Acompanhamento e Consultoria</li>
+          <li class="on"><i class="bi bi-check-circle-fill"></i> Métricas e Resultados</li>
+        </ul>
+        <a href="contato.html" class="pacote-cta">Quero esse pacote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona">
+    <div class="reveal" style="text-align:center">
+      <p class="section-label">Na prática</p>
+      <h2 class="section-title">Como funciona<br>para a sua empresa</h2>
+      <p class="section-text" style="margin:0 auto">Veja exemplos reais de como cada pacote se aplica, dependendo do momento do seu negócio.</p>
+    </div>
+    <div class="funciona-grid">
+      <div class="funciona-card reveal" style="transition-delay:.1s">
+        <p class="funciona-perfil">Pequeno negócio local</p>
+        <h3 class="funciona-pacote">Treinamento de Equipe — R$ 2.500</h3>
+        <ul class="funciona-steps">
+          <li><b>Semana 1</b> Diagnóstico rápido das redes sociais e da rotina da equipe.</li>
+          <li><b>Semanas 2-3</b> Workshops práticos de conteúdo, redes sociais e atendimento digital.</li>
+          <li><b>Semana 4</b> Simulação real com a equipe e entrega de checklist de rotina.</li>
+        </ul>
+        <p class="funciona-resultado">Resultado: equipe autônoma para cuidar das redes sociais e do atendimento online no dia a dia.</p>
+      </div>
+
+      <div class="funciona-card reveal" style="transition-delay:.2s">
+        <p class="funciona-perfil">Negócio em crescimento</p>
+        <h3 class="funciona-pacote">Consultoria + Treinamento — R$ 5.000</h3>
+        <ul class="funciona-steps">
+          <li><b>Semanas 1-2</b> Diagnóstico completo e entrevistas com a equipe.</li>
+          <li><b>Semanas 3-4</b> Planejamento estratégico: posicionamento, canais e calendário de conteúdo.</li>
+          <li><b>Semanas 5-8</b> Treinamento da equipe nas ferramentas escolhidas.</li>
+        </ul>
+        <p class="funciona-resultado">Resultado: plano estratégico pronto e equipe capacitada para executar com autonomia.</p>
+      </div>
+
+      <div class="funciona-card reveal" style="transition-delay:.3s">
+        <p class="funciona-perfil">Empresa em expansão</p>
+        <h3 class="funciona-pacote">Pacote Completo — R$ 9.000</h3>
+        <ul class="funciona-steps">
+          <li><b>Mês 1</b> Diagnóstico + Planejamento Estratégico.</li>
+          <li><b>Mês 2</b> Treinamento de Equipe com workshops e simulações.</li>
+          <li><b>Meses 3-4</b> Acompanhamento e Consultoria na execução, com relatório de Métricas e Resultados.</li>
+        </ul>
+        <p class="funciona-resultado">Resultado: marketing estruturado, equipe independente e resultados mensuráveis em até 4 meses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRONOGRAMA -->
+  <section id="cronograma">
+    <div class="reveal" style="text-align:center">
+      <p class="section-label">Linha do tempo</p>
+      <h2 class="section-title">Cronograma do Pacote Completo</h2>
+      <p class="section-text" style="margin:0 auto">Um exemplo de como as etapas se encaixam ao longo de aproximadamente 4 meses.</p>
+    </div>
+    <div class="crono-timeline reveal" style="transition-delay:.1s">
+      <div class="crono-item"><div class="crono-dot"></div><div class="crono-card"><span class="crono-period">Semanas 1-2</span><h3 class="crono-title">Diagnóstico</h3><p class="crono-desc">Análise da empresa, mercado, concorrência e processos de marketing atuais.</p></div></div>
+      <div class="crono-item"><div class="crono-dot"></div><div class="crono-card"><span class="crono-period">Semanas 3-4</span><h3 class="crono-title">Planejamento Estratégico</h3><p class="crono-desc">Construção do plano personalizado, com metas e canais prioritários.</p></div></div>
+      <div class="crono-item"><div class="crono-dot"></div><div class="crono-card"><span class="crono-period">Semanas 5-8</span><h3 class="crono-title">Treinamento de Equipe</h3><p class="crono-desc">Workshops práticos e simulações reais com a equipe do cliente.</p></div></div>
+      <div class="crono-item"><div class="crono-dot"></div><div class="crono-card"><span class="crono-period">Semanas 9-14</span><h3 class="crono-title">Acompanhamento e Consultoria</h3><p class="crono-desc">Execução acompanhada lado a lado, com ajustes contínuos na estratégia.</p></div></div>
+      <div class="crono-item"><div class="crono-dot"></div><div class="crono-card"><span class="crono-period">Semanas 15-16</span><h3 class="crono-title">Métricas e Resultados</h3><p class="crono-desc">Relatório final com indicadores de impacto e plano de continuidade.</p></div></div>
+    </div>
+    <p class="crono-note reveal" style="transition-delay:.2s">Pacotes individuais ou combinados seguem uma versão reduzida deste cronograma, com foco apenas nas etapas contratadas.</p>
+  </section>
+
+  <!-- DIFERENCIAL -->
+  <section id="diferencial">
+    <div class="reveal" style="text-align:center; max-width:700px; margin:0 auto">
+      <p class="section-label">Por que a Lead Up?</p>
+      <h2 class="section-title">Nosso Diferencial</h2>
+      <p class="section-text" style="margin:0 auto">
+        Integramos consultoria estratégica + treinamento prático com soluções personalizadas —
+        dentro da própria empresa do cliente.
+      </p>
+    </div>
+    <div class="dif-grid" style="margin-top:60px">
+      <div class="dif-item reveal" style="transition-delay:.1s">
+        <div class="dif-num">01</div>
+        <h3>Consultoria + Treinamento</h3>
+        <p>Não apenas orientamos — executamos junto com sua equipe, garantindo que o conhecimento fique na empresa.</p>
+      </div>
+      <div class="dif-item reveal" style="transition-delay:.2s">
+        <div class="dif-num">02</div>
+        <h3>Soluções Personalizadas</h3>
+        <p>Cada cliente tem um plano único, desenvolvido com base no diagnóstico específico do seu negócio.</p>
+      </div>
+      <div class="dif-item reveal" style="transition-delay:.3s">
+        <div class="dif-num">03</div>
+        <h3>Workshops e Simulações</h3>
+        <p>Treinamentos práticos com recursos reais — superando as deficiências identificadas no diagnóstico.</p>
+      </div>
+      <div class="dif-item reveal" style="transition-delay:.4s">
+        <div class="dif-num">04</div>
+        <h3>Marketing 5.0</h3>
+        <p>Ferramentas digitais modernas, dados e redes sociais — com tecnologia e toque humano.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section id="processo" style="background:var(--light)">
+    <div class="reveal" style="text-align:center">
+      <p class="section-label">Como trabalhamos</p>
+      <h2 class="section-title">Nosso Processo</h2>
+    </div>
+    <div class="processo-steps">
+      <div class="step reveal" style="transition-delay:.1s"><div class="step-num">1</div><p class="step-title">Diagnóstico</p><p class="step-desc">Entendemos profundamente o cliente, seus processos e desafios de marketing.</p></div>
+      <div class="step reveal" style="transition-delay:.2s"><div class="step-num">2</div><p class="step-title">Análise</p><p class="step-desc">Mapeamos oportunidades, pontos críticos e o potencial de crescimento.</p></div>
+      <div class="step reveal" style="transition-delay:.3s"><div class="step-num">3</div><p class="step-title">Estratégia</p><p class="step-desc">Criamos e executamos um plano personalizado de marketing e capacitação.</p></div>
+      <div class="step reveal" style="transition-delay:.4s"><div class="step-num">4</div><p class="step-title">Treinamento</p><p class="step-desc">Capacitamos a equipe com workshops práticos e simulações reais.</p></div>
+      <div class="step reveal" style="transition-delay:.5s"><div class="step-num">5</div><p class="step-title">Resultados</p><p class="step-desc">Acompanhamos métricas e ajustamos continuamente para maximizar o retorno.</p></div>
+    </div>
+  </section>
+
+  <!-- ANTES E DEPOIS -->
+  <section id="antes-depois">
+    <div class="reveal" style="text-align:center">
+      <p class="section-label">O impacto real</p>
+      <h2 class="section-title">Antes &amp; Depois da Lead Up</h2>
+    </div>
+    <div class="ad-grid reveal" style="transition-delay:.15s">
+      <div class="ad-card">
+        <div class="ad-toggle-wrap">
+          <button class="ad-btn active" data-side="antes">Antes</button>
+          <button class="ad-btn" data-side="depois">Depois</button>
+        </div>
+        <div class="ad-content">
+          <div class="ad-side ad-antes active"><span class="ad-icon"><i class="bi bi-emoji-frown-fill"></i></span><h3>Sem estratégia digital</h3><p>A empresa depende apenas de indicações. Redes sociais paradas, sem frequência nem identidade visual definida.</p></div>
+          <div class="ad-side ad-depois"><span class="ad-icon"><i class="bi bi-rocket-takeoff-fill"></i></span><h3>Presença digital ativa</h3><p>Calendário de conteúdo, identidade visual consistente e crescimento orgânico mensal nas redes sociais.</p></div>
+        </div>
+      </div>
+      <div class="ad-card">
+        <div class="ad-toggle-wrap">
+          <button class="ad-btn active" data-side="antes">Antes</button>
+          <button class="ad-btn" data-side="depois">Depois</button>
+        </div>
+        <div class="ad-content">
+          <div class="ad-side ad-antes active"><span class="ad-icon"><i class="bi bi-emoji-neutral-fill"></i></span><h3>Equipe sem capacitação</h3><p>Funcionários não sabem usar ferramentas de marketing. Cada um age por conta própria, sem processo definido.</p></div>
+          <div class="ad-side ad-depois"><span class="ad-icon"><i class="bi bi-bullseye"></i></span><h3>Time alinhado e produtivo</h3><p>Treinamento aplicado, processos claros e equipe autônoma — capaz de executar campanhas sem depender de terceiros.</p></div>
+        </div>
+      </div>
+      <div class="ad-card">
+        <div class="ad-toggle-wrap">
+          <button class="ad-btn active" data-side="antes">Antes</button>
+          <button class="ad-btn" data-side="depois">Depois</button>
+        </div>
+        <div class="ad-content">
+          <div class="ad-side ad-antes active"><span class="ad-icon"><i class="bi bi-graph-down-arrow"></i></span><h3>Resultados invisíveis</h3><p>Nenhuma métrica acompanhada. A empresa investe em marketing mas não sabe se está funcionando.</p></div>
+          <div class="ad-side ad-depois"><span class="ad-icon"><i class="bi bi-graph-up-arrow"></i></span><h3>Decisões baseadas em dados</h3><p>Indicadores definidos, relatórios mensais e ajustes contínuos — cada real investido com propósito claro.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKETING EVOLUTION -->
+  <section id="marketing-evo" style="background:var(--light)">
+    <div class="reveal" style="text-align:center">
+      <h2 class="section-title">A Evolução do Marketing</h2>
+      <p class="section-text" style="margin:0 auto 56px">De produto a propósito — entenda como chegamos até aqui.</p>
+    </div>
+    <div class="evo-timeline reveal" style="transition-delay:.1s">
+      <div class="evo-item"><div class="evo-dot"></div><div class="evo-card"><span class="evo-version">1.0</span><h3 class="evo-title">Era do Produto</h3><p class="evo-era">Séc. XX — Revolução Industrial</p><p class="evo-desc">Foco total na produção em massa. O produto era o centro; bastava fabricar para vender.</p></div></div>
+      <div class="evo-item"><div class="evo-dot"></div><div class="evo-card"><span class="evo-version">2.0</span><h3 class="evo-title">Era do Consumidor</h3><p class="evo-era">Anos 1970–1990</p><p class="evo-desc">O cliente passa a ser o centro. A concorrência cresce e as empresas precisam satisfazer necessidades específicas.</p></div></div>
+      <div class="evo-item"><div class="evo-dot"></div><div class="evo-card"><span class="evo-version">3.0</span><h3 class="evo-title">Era dos Valores</h3><p class="evo-era">Anos 2000</p><p class="evo-desc">As marcas precisam ter propósito. O consumidor quer se identificar com causas — sustentabilidade e responsabilidade.</p></div></div>
+      <div class="evo-item"><div class="evo-dot"></div><div class="evo-card"><span class="evo-version">4.0</span><h3 class="evo-title">Era Digital</h3><p class="evo-era">Anos 2010</p><p class="evo-desc">Fusão do online e offline. Redes sociais e dados transformam a forma de comunicar e vender.</p></div></div>
+      <div class="evo-item"><div class="evo-dot"></div><div class="evo-card"><span class="evo-version">5.0</span><h3 class="evo-title">Era da Tecnologia</h3><p class="evo-era">Anos 2020</p><p class="evo-desc">IA, automação e personalização em escala. Experiências hiper-personalizadas com toque humano.</p></div></div>
+      <div class="evo-item"><div class="evo-dot"></div><div class="evo-card"><span class="evo-version">6.0</span><h3 class="evo-title">Era da Resiliência</h3><p class="evo-era">Pós-pandemia · 2022+</p><p class="evo-desc">Omnichannel, adaptabilidade e confiança. Empresas aprendem a operar em cenários imprevisíveis.</p></div></div>
+      <div class="evo-item evo-leadup"><div class="evo-dot"></div><div class="evo-card"><span class="evo-version">7.0</span><h3 class="evo-title">Era do Futuro</h3><p class="evo-era">Lead Up · 2026</p><p class="evo-desc">IA avançada e conexão humana profunda. A Lead Up prepara empresas para dominar este novo cenário.</p></div></div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <div class="cta-strip">
+    <p>Quer aplicar tudo isso na sua empresa?</p>
+    <a href="contato.html" class="hero-cta hero-cta-primary">Falar com a equipe</a>
+  </div>
+
+  <footer>
+    <div class="footer-links"><a href="index.html">Home</a><a href="sobre.html">Sobre</a><a href="servicos.html">Serviços</a><a href="diagnostico.html">Diagnóstico</a><a href="contato.html">Contato</a></div>
+    <div class="footer-contact"><p><i class="bi bi-envelope-fill"></i> contato@leadup.com.br</p><p><i class="bi bi-telephone-fill"></i> (11) 9 0000-0000</p><p style="margin-top:12px; opacity:.5; font-size:.7rem">© 2026 Lead Up Consultoria &amp; Treinamento</p></div>
+  </footer>
+
+  <a class="whatsapp-btn" href="https://wa.me/5511900000000" target="_blank" title="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-pulse"></span>
+  </a>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/chatbot.js"></script>
+</body>
+</html>
+
+

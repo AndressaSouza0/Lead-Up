@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnóstico Gratuito — Lead Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/favicon-180.png" /><link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+<body>
+
+  <div id="loader"><img src="assets/img/logo-transparent.png" alt="Lead Up" class="loader-logo" /></div>
+  <div id="readProgress"></div>
+
+  <nav id="navbar">
+    <div class="nav-logo"><a href="index.html"><img src="assets/img/logo-transparent.png" alt="Lead Up" /></a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="diagnostico.html">Diagnóstico</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle" title="Modo escuro"><span class="theme-icon"><i class="bi bi-moon-stars-fill"></i></span></button>
+      <button id="navHamburger" class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div id="navMobile" class="nav-mobile">
+    <button id="navMobileClose" class="nav-mobile-close"><i class="bi bi-x-lg"></i></button>
+    <ul>
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="sobre.html" class="mobile-link">Sobre</a></li>
+      <li><a href="servicos.html" class="mobile-link">Serviços</a></li>
+      <li><a href="diagnostico.html" class="mobile-link">Diagnóstico</a></li>
+      <li><a href="contato.html" class="mobile-link">Contato</a></li>
+    </ul>
+  </div>
+  <div id="navOverlay" class="nav-overlay"></div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-header-content reveal">
+      <p class="section-label">100% gratuito · 5 perguntas</p>
+      <h1 class="page-header-title">Diagnóstico de Marketing</h1>
+    </div>
+  </div>
+
+  <!-- QUIZ -->
+  <section id="quiz" style="background:var(--cream)">
+    <div class="reveal" style="text-align:center">
+      <h2 class="section-title">Qual é o nível de marketing<br>da sua empresa?</h2>
+      <p class="section-text" style="margin:0 auto 48px">Responda 5 perguntas rápidas e descubra onde sua empresa está — e onde pode chegar com a Lead Up.</p>
+    </div>
+
+    <div class="quiz-container reveal" style="transition-delay:.2s">
+      <div class="quiz-progress-wrap">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizFill"></div></div>
+        <span class="quiz-progress-label" id="quizLabel">Pergunta 1 de 5</span>
+      </div>
+
+      <div id="quizQuestions">
+        <div class="quiz-question active" data-q="0">
+          <p class="quiz-q-text">Sua empresa tem uma estratégia de marketing definida?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não temos nenhuma estratégia</button>
+            <button class="quiz-opt" data-val="1">Fazemos algumas ações, mas sem planejamento</button>
+            <button class="quiz-opt" data-val="2">Sim, temos um plano estruturado</button>
+          </div>
+        </div>
+        <div class="quiz-question" data-q="1">
+          <p class="quiz-q-text">Como é a presença digital da sua empresa?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não temos redes sociais ativas</button>
+            <button class="quiz-opt" data-val="1">Postamos às vezes, sem frequência</button>
+            <button class="quiz-opt" data-val="2">Temos presença consistente e engajamento</button>
+          </div>
+        </div>
+        <div class="quiz-question" data-q="2">
+          <p class="quiz-q-text">Sua equipe sabe usar ferramentas de marketing digital?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Ninguém tem essa habilidade</button>
+            <button class="quiz-opt" data-val="1">Algumas pessoas sabem o básico</button>
+            <button class="quiz-opt" data-val="2">A equipe é capacitada e autônoma</button>
+          </div>
+        </div>
+        <div class="quiz-question" data-q="3">
+          <p class="quiz-q-text">Você acompanha métricas e resultados das suas ações de marketing?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não medimos nada</button>
+            <button class="quiz-opt" data-val="1">Olhamos alguns números eventualmente</button>
+            <button class="quiz-opt" data-val="2">Temos relatórios e tomamos decisões por dados</button>
+          </div>
+        </div>
+        <div class="quiz-question" data-q="4">
+          <p class="quiz-q-text">Como você avalia a divulgação do seu negócio hoje?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Dependemos só de indicações</button>
+            <button class="quiz-opt" data-val="1">Tentamos divulgar, mas sem muito resultado</button>
+            <button class="quiz-opt" data-val="2">Nossa divulgação atrai clientes regularmente</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="quizResult" class="quiz-result hidden">
+        <div class="quiz-result-icon" id="quizResultIcon"></div>
+        <h3 class="quiz-result-title" id="quizResultTitle"></h3>
+        <p class="quiz-result-text" id="quizResultText"></p>
+        <a href="contato.html" class="hero-cta hero-cta-primary" style="margin-top:32px; display:inline-block">Quero uma consultoria gratuita</a>
+        <button class="quiz-restart" id="quizRestart">Refazer diagnóstico</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <div class="cta-strip">
+    <p>Quer entender melhor os resultados do seu diagnóstico?</p>
+    <a href="contato.html" class="hero-cta hero-cta-primary">Falar com a equipe</a>
+  </div>
+
+  <footer>
+    <div class="footer-links"><a href="index.html">Home</a><a href="sobre.html">Sobre</a><a href="servicos.html">Serviços</a><a href="diagnostico.html">Diagnóstico</a><a href="contato.html">Contato</a></div>
+    <div class="footer-contact"><p><i class="bi bi-envelope-fill"></i> contato@leadup.com.br</p><p><i class="bi bi-telephone-fill"></i> (11) 9 0000-0000</p><p style="margin-top:12px; opacity:.5; font-size:.7rem">© 2026 Lead Up Consultoria &amp; Treinamento</p></div>
+  </footer>
+
+  <a class="whatsapp-btn" href="https://wa.me/5511900000000" target="_blank" title="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-pulse"></span>
+  </a>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/chatbot.js"></script>
+</body>
+</html>
+
+

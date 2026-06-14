@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — Lead Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/favicon-180.png" /><link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+<body>
+
+  <div id="loader"><img src="assets/img/logo-transparent.png" alt="Lead Up" class="loader-logo" /></div>
+  <div id="readProgress"></div>
+
+  <nav id="navbar">
+    <div class="nav-logo"><a href="index.html"><img src="assets/img/logo-transparent.png" alt="Lead Up" /></a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="diagnostico.html">Diagnóstico</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle" title="Modo escuro"><span class="theme-icon"><i class="bi bi-moon-stars-fill"></i></span></button>
+      <button id="navHamburger" class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div id="navMobile" class="nav-mobile">
+    <button id="navMobileClose" class="nav-mobile-close"><i class="bi bi-x-lg"></i></button>
+    <ul>
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="sobre.html" class="mobile-link">Sobre</a></li>
+      <li><a href="servicos.html" class="mobile-link">Serviços</a></li>
+      <li><a href="diagnostico.html" class="mobile-link">Diagnóstico</a></li>
+      <li><a href="contato.html" class="mobile-link">Contato</a></li>
+    </ul>
+  </div>
+  <div id="navOverlay" class="nav-overlay"></div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-header-content reveal">
+      <p class="section-label">Primeira sessão gratuita</p>
+      <h1 class="page-header-title">Vamos crescer juntos?</h1>
+    </div>
+  </div>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="reveal" style="text-align:center">
+      <p class="section-label">Entre em contato</p>
+      <h2 class="section-title">Envie sua mensagem</h2>
+      <p class="section-text" style="margin:0 auto 16px">Preencha o formulário e receba em até 24h uma proposta personalizada para o marketing da sua empresa.</p>
+      <p class="contato-garantia reveal" style="transition-delay:.15s">✓ Sem compromisso &nbsp;·&nbsp; ✓ Diagnóstico gratuito &nbsp;·&nbsp; ✓ Resposta em 24h</p>
+    </div>
+    <form class="contato-form reveal" style="transition-delay:.2s" id="contatoForm" novalidate>
+      <div class="contato-row">
+        <div class="contato-field">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+          <span class="field-error" id="erroNome"></span>
+        </div>
+        <div class="contato-field">
+          <label for="empresa">Nome da empresa</label>
+          <input type="text" id="empresa" name="empresa" placeholder="Sua empresa" />
+          <span class="field-error" id="erroEmpresa"></span>
+        </div>
+      </div>
+      <div class="contato-row">
+        <div class="contato-field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" />
+          <span class="field-error" id="erroEmail"></span>
+        </div>
+        <div class="contato-field">
+          <label for="segmento">Segmento da empresa</label>
+          <select id="segmento" name="segmento">
+            <option value="">Selecione...</option>
+            <option>Comércio / Varejo</option>
+            <option>Serviços</option>
+            <option>Alimentação</option>
+            <option>Saúde e Bem-estar</option>
+            <option>Tecnologia</option>
+            <option>Educação</option>
+            <option>Outro</option>
+          </select>
+          <span class="field-error" id="erroSegmento"></span>
+        </div>
+      </div>
+      <div class="contato-field">
+        <label for="desafio">Qual é o principal desafio de marketing da sua empresa?</label>
+        <textarea id="desafio" name="desafio" rows="4" placeholder="Conte um pouco sobre sua situação atual..."></textarea>
+        <span class="field-error" id="erroDesafio"></span>
+      </div>
+      <button type="submit" class="contato-submit">Enviar mensagem</button>
+    </form>
+    <div class="contato-sucesso hidden" id="contatoSucesso">
+      <div class="sucesso-icon">✓</div>
+      <h3>Mensagem enviada!</h3>
+      <p>Obrigado pelo interesse. Nossa equipe entrará em contato em breve.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:var(--cream)">
+    <div class="reveal" style="text-align:center">
+      <p class="section-label">Dúvidas frequentes</p>
+      <h2 class="section-title">Perguntas &amp; Respostas</h2>
+    </div>
+    <div class="faq-list reveal" style="transition-delay:.2s; max-width:760px; margin:48px auto 0">
+      <div class="faq-item">
+        <button class="faq-question"><span>Para qual tipo de empresa a Lead Up trabalha?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Atendemos empresas de pequeno a médio porte de qualquer segmento — lojas, comércios, prestadores de serviço e negócios em crescimento que desejam estruturar ou melhorar seu marketing.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Quanto tempo dura uma consultoria completa?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>O pacote completo inclui diagnóstico, planejamento, treinamento e acompanhamento. O tempo varia conforme a complexidade da empresa, mas geralmente entre 30 e 90 dias de atuação ativa.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>O treinamento é presencial ou online?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Oferecemos as duas modalidades. Os workshops podem ser realizados presencialmente nas instalações da empresa cliente ou de forma remota, conforme a preferência do contratante.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>O que está incluído no pacote de R$ 9.000?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>O pacote contempla: diagnóstico completo, planejamento estratégico personalizado, treinamento da equipe com workshops práticos, acompanhamento contínuo e relatório de métricas e resultados.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>A empresa precisa ter equipe de marketing para contratar?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Não. Trabalhamos tanto com empresas que ainda não têm equipe de marketing quanto com aquelas que precisam capacitar a equipe existente. O treinamento é adaptado ao nível atual de cada time.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Como funciona o diagnóstico inicial?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>O diagnóstico é uma análise completa dos processos, canais de comunicação, presença digital e estratégias atuais. A partir dele, identificamos os principais pontos de melhoria e oportunidades de crescimento.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links"><a href="index.html">Home</a><a href="sobre.html">Sobre</a><a href="servicos.html">Serviços</a><a href="diagnostico.html">Diagnóstico</a><a href="contato.html">Contato</a></div>
+    <div class="footer-contact"><p><i class="bi bi-envelope-fill"></i> contato@leadup.com.br</p><p><i class="bi bi-telephone-fill"></i> (11) 9 0000-0000</p><p style="margin-top:12px; opacity:.5; font-size:.7rem">© 2026 Lead Up Consultoria &amp; Treinamento</p></div>
+  </footer>
+
+  <a class="whatsapp-btn" href="https://wa.me/5511900000000" target="_blank" title="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-pulse"></span>
+  </a>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/chatbot.js"></script>
+</body>
+</html>
+
+
