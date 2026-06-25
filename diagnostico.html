@@ -17,9 +17,9 @@
   <div id="readProgress"></div>
 
   <nav id="navbar">
-    <div class="nav-logo"><a href="index.html"><img src="assets/img/logo-transparent.png" alt="Lead Up" /></a></div>
+    <div class="nav-logo"><a href="Home.html"><img src="assets/img/logo-transparent.png" alt="Lead Up" /></a></div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="Home.html">Home</a></li>
       <li><a href="sobre.html">Sobre</a></li>
       <li><a href="servicos.html">Serviços</a></li>
       <li><a href="diagnostico.html">Diagnóstico</a></li>
@@ -34,7 +34,7 @@
   <div id="navMobile" class="nav-mobile">
     <button id="navMobileClose" class="nav-mobile-close"><i class="bi bi-x-lg"></i></button>
     <ul>
-      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="Home.html" class="mobile-link">Home</a></li>
       <li><a href="sobre.html" class="mobile-link">Sobre</a></li>
       <li><a href="servicos.html" class="mobile-link">Serviços</a></li>
       <li><a href="diagnostico.html" class="mobile-link">Diagnóstico</a></li>
@@ -46,7 +46,7 @@
   <!-- PAGE HEADER -->
   <div class="page-header">
     <div class="page-header-content reveal">
-      <p class="section-label">100% gratuito · 5 perguntas</p>
+      <p class="section-label">100% gratuito · 18 perguntas</p>
       <h1 class="page-header-title">Diagnóstico de Marketing</h1>
     </div>
   </div>
@@ -55,54 +55,176 @@
   <section id="quiz" style="background:var(--cream)">
     <div class="reveal" style="text-align:center">
       <h2 class="section-title">Qual é o nível de marketing<br>da sua empresa?</h2>
-      <p class="section-text" style="margin:0 auto 48px">Responda 5 perguntas rápidas e descubra onde sua empresa está — e onde pode chegar com a Lead Up.</p>
+      <p class="section-text" style="margin:0 auto 48px">Responda 18 perguntas e receba um diagnóstico completo do marketing da sua empresa — como uma avaliação profissional, 100% gratuita.</p>
     </div>
 
     <div class="quiz-container reveal" style="transition-delay:.2s">
       <div class="quiz-progress-wrap">
         <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizFill"></div></div>
-        <span class="quiz-progress-label" id="quizLabel">Pergunta 1 de 5</span>
+        <span class="quiz-progress-label" id="quizLabel">Pergunta 1 de 18</span>
       </div>
 
       <div id="quizQuestions">
+        <!-- 1. Estratégia -->
         <div class="quiz-question active" data-q="0">
-          <p class="quiz-q-text">Sua empresa tem uma estratégia de marketing definida?</p>
+          <p class="quiz-q-text">Sua empresa tem uma estratégia de marketing documentada com metas e prazos definidos?</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-val="0">Não temos nenhuma estratégia</button>
-            <button class="quiz-opt" data-val="1">Fazemos algumas ações, mas sem planejamento</button>
-            <button class="quiz-opt" data-val="2">Sim, temos um plano estruturado</button>
+            <button class="quiz-opt" data-val="0">Não temos nenhum planejamento formal</button>
+            <button class="quiz-opt" data-val="1">Temos ideias gerais, mas nada documentado</button>
+            <button class="quiz-opt" data-val="2">Sim, temos um plano com metas, cronograma e responsáveis</button>
           </div>
         </div>
+        <!-- 2. Público-alvo -->
         <div class="quiz-question" data-q="1">
-          <p class="quiz-q-text">Como é a presença digital da sua empresa?</p>
+          <p class="quiz-q-text">Você sabe exatamente quem é o público-alvo da sua empresa (idade, renda, comportamento, dores)?</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-val="0">Não temos redes sociais ativas</button>
-            <button class="quiz-opt" data-val="1">Postamos às vezes, sem frequência</button>
-            <button class="quiz-opt" data-val="2">Temos presença consistente e engajamento</button>
+            <button class="quiz-opt" data-val="0">Não temos isso definido, vendemos para quem aparecer</button>
+            <button class="quiz-opt" data-val="1">Temos uma ideia geral, mas sem pesquisa ou dados</button>
+            <button class="quiz-opt" data-val="2">Sim, temos personas definidas com base em dados reais</button>
           </div>
         </div>
+        <!-- 3. Identidade visual -->
         <div class="quiz-question" data-q="2">
-          <p class="quiz-q-text">Sua equipe sabe usar ferramentas de marketing digital?</p>
+          <p class="quiz-q-text">Sua empresa possui uma identidade visual profissional (logo, paleta de cores, tipografia, padrão visual)?</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-val="0">Ninguém tem essa habilidade</button>
-            <button class="quiz-opt" data-val="1">Algumas pessoas sabem o básico</button>
-            <button class="quiz-opt" data-val="2">A equipe é capacitada e autônoma</button>
+            <button class="quiz-opt" data-val="0">Não temos ou foi feita de forma amadora</button>
+            <button class="quiz-opt" data-val="1">Temos logo e algumas cores, mas sem manual de marca</button>
+            <button class="quiz-opt" data-val="2">Sim, temos identidade completa e aplicamos em todos os materiais</button>
           </div>
         </div>
+        <!-- 4. Posicionamento -->
         <div class="quiz-question" data-q="3">
-          <p class="quiz-q-text">Você acompanha métricas e resultados das suas ações de marketing?</p>
+          <p class="quiz-q-text">Seus clientes conseguem dizer em uma frase o que diferencia sua empresa da concorrência?</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-val="0">Não medimos nada</button>
-            <button class="quiz-opt" data-val="1">Olhamos alguns números eventualmente</button>
-            <button class="quiz-opt" data-val="2">Temos relatórios e tomamos decisões por dados</button>
+            <button class="quiz-opt" data-val="0">Não temos um diferencial claro</button>
+            <button class="quiz-opt" data-val="1">Temos diferenciais, mas não comunicamos bem</button>
+            <button class="quiz-opt" data-val="2">Sim, nosso posicionamento é claro e reconhecido pelo mercado</button>
           </div>
         </div>
+        <!-- 5. Presença digital -->
         <div class="quiz-question" data-q="4">
-          <p class="quiz-q-text">Como você avalia a divulgação do seu negócio hoje?</p>
+          <p class="quiz-q-text">Como está a presença da sua empresa nas redes sociais (Instagram, Facebook, LinkedIn, etc.)?</p>
           <div class="quiz-options">
-            <button class="quiz-opt" data-val="0">Dependemos só de indicações</button>
-            <button class="quiz-opt" data-val="1">Tentamos divulgar, mas sem muito resultado</button>
-            <button class="quiz-opt" data-val="2">Nossa divulgação atrai clientes regularmente</button>
+            <button class="quiz-opt" data-val="0">Não temos perfis ou estão abandonados</button>
+            <button class="quiz-opt" data-val="1">Postamos de vez em quando, sem calendário definido</button>
+            <button class="quiz-opt" data-val="2">Temos frequência consistente, conteúdo planejado e engajamento</button>
+          </div>
+        </div>
+        <!-- 6. Site -->
+        <div class="quiz-question" data-q="5">
+          <p class="quiz-q-text">Sua empresa tem um site atualizado, responsivo (adaptado para celular) e que gera contatos ou vendas?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não temos site ou está desatualizado</button>
+            <button class="quiz-opt" data-val="1">Temos site, mas não gera leads nem vendas</button>
+            <button class="quiz-opt" data-val="2">Sim, nosso site é otimizado e traz resultados</button>
+          </div>
+        </div>
+        <!-- 7. Google / SEO -->
+        <div class="quiz-question" data-q="6">
+          <p class="quiz-q-text">Quando alguém pesquisa seu produto ou serviço no Google, sua empresa aparece nos primeiros resultados?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não aparecemos ou nem verificamos</button>
+            <button class="quiz-opt" data-val="1">Aparecemos em algumas buscas, mas sem trabalho de SEO</button>
+            <button class="quiz-opt" data-val="2">Sim, trabalhamos SEO e Google Meu Negócio ativamente</button>
+          </div>
+        </div>
+        <!-- 8. Marketing de conteúdo -->
+        <div class="quiz-question" data-q="7">
+          <p class="quiz-q-text">Sua empresa produz conteúdo educativo ou informativo para atrair clientes (posts, vídeos, blog, e-books)?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não produzimos nenhum tipo de conteúdo</button>
+            <button class="quiz-opt" data-val="1">Fazemos algo esporádico, sem estratégia definida</button>
+            <button class="quiz-opt" data-val="2">Sim, temos uma estratégia de conteúdo com calendário editorial</button>
+          </div>
+        </div>
+        <!-- 9. Mídia paga -->
+        <div class="quiz-question" data-q="8">
+          <p class="quiz-q-text">Sua empresa investe em anúncios pagos (Google Ads, Meta Ads, impulsionamentos)?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Nunca investimos em anúncios</button>
+            <button class="quiz-opt" data-val="1">Investimos às vezes, mas sem acompanhar o retorno</button>
+            <button class="quiz-opt" data-val="2">Temos campanhas ativas com acompanhamento de ROI</button>
+          </div>
+        </div>
+        <!-- 10. Funil de vendas -->
+        <div class="quiz-question" data-q="9">
+          <p class="quiz-q-text">Sua empresa tem um processo claro desde o primeiro contato do cliente até o fechamento da venda?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não, cada venda acontece de um jeito diferente</button>
+            <button class="quiz-opt" data-val="1">Temos algumas etapas, mas sem um funil estruturado</button>
+            <button class="quiz-opt" data-val="2">Sim, temos um funil de vendas definido com etapas claras</button>
+          </div>
+        </div>
+        <!-- 11. CRM e gestão de leads -->
+        <div class="quiz-question" data-q="10">
+          <p class="quiz-q-text">Vocês utilizam alguma ferramenta para gerenciar contatos e oportunidades de venda (CRM, planilha organizada)?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não controlamos, confiamos na memória ou no WhatsApp</button>
+            <button class="quiz-opt" data-val="1">Usamos planilha ou anotações, mas sem disciplina</button>
+            <button class="quiz-opt" data-val="2">Usamos CRM ou ferramenta com processo definido de follow-up</button>
+          </div>
+        </div>
+        <!-- 12. Email marketing -->
+        <div class="quiz-question" data-q="11">
+          <p class="quiz-q-text">Sua empresa mantém contato com clientes e leads por e-mail marketing ou newsletters?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não fazemos nenhum tipo de e-mail marketing</button>
+            <button class="quiz-opt" data-val="1">Enviamos e-mails eventualmente, sem segmentação</button>
+            <button class="quiz-opt" data-val="2">Temos campanhas segmentadas com automação e métricas</button>
+          </div>
+        </div>
+        <!-- 13. Análise de concorrência -->
+        <div class="quiz-question" data-q="12">
+          <p class="quiz-q-text">Você acompanha o que seus concorrentes estão fazendo em marketing e vendas?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não acompanho a concorrência</button>
+            <button class="quiz-opt" data-val="1">Olho de vez em quando, mas sem método</button>
+            <button class="quiz-opt" data-val="2">Faço análise periódica de concorrentes e ajusto minha estratégia</button>
+          </div>
+        </div>
+        <!-- 14. Métricas e dados -->
+        <div class="quiz-question" data-q="13">
+          <p class="quiz-q-text">Você acompanha métricas-chave do seu negócio (custo de aquisição, taxa de conversão, ticket médio, LTV)?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não medimos nenhum indicador</button>
+            <button class="quiz-opt" data-val="1">Olhamos o faturamento, mas sem detalhar indicadores</button>
+            <button class="quiz-opt" data-val="2">Monitoramos KPIs e tomamos decisões baseadas em dados</button>
+          </div>
+        </div>
+        <!-- 15. Atendimento ao cliente -->
+        <div class="quiz-question" data-q="14">
+          <p class="quiz-q-text">Como é o tempo e a qualidade de resposta da sua empresa quando um cliente entra em contato?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Demoramos para responder ou não temos padrão</button>
+            <button class="quiz-opt" data-val="1">Respondemos razoavelmente rápido, mas sem script ou processo</button>
+            <button class="quiz-opt" data-val="2">Temos atendimento rápido, padronizado e com acompanhamento</button>
+          </div>
+        </div>
+        <!-- 16. Pós-venda e fidelização -->
+        <div class="quiz-question" data-q="15">
+          <p class="quiz-q-text">Após a venda, sua empresa mantém relacionamento com o cliente para gerar recompra e indicações?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não fazemos nenhum acompanhamento pós-venda</button>
+            <button class="quiz-opt" data-val="1">Às vezes entramos em contato, mas sem processo definido</button>
+            <button class="quiz-opt" data-val="2">Temos programa de fidelização, pesquisa de satisfação e reativação</button>
+          </div>
+        </div>
+        <!-- 17. Capacitação da equipe -->
+        <div class="quiz-question" data-q="16">
+          <p class="quiz-q-text">Sua equipe recebe treinamentos sobre vendas, atendimento ou marketing digital?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Nunca fizemos treinamentos nessa área</button>
+            <button class="quiz-opt" data-val="1">Já fizemos algo pontual, mas sem continuidade</button>
+            <button class="quiz-opt" data-val="2">Investimos em capacitação contínua da equipe</button>
+          </div>
+        </div>
+        <!-- 18. Orçamento de marketing -->
+        <div class="quiz-question" data-q="17">
+          <p class="quiz-q-text">Sua empresa separa um orçamento mensal específico para ações de marketing?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-val="0">Não temos orçamento definido para marketing</button>
+            <button class="quiz-opt" data-val="1">Investimos quando sobra verba, sem planejamento fixo</button>
+            <button class="quiz-opt" data-val="2">Temos orçamento mensal definido com alocação por canal</button>
           </div>
         </div>
       </div>
@@ -124,8 +246,8 @@
   </div>
 
   <footer>
-    <div class="footer-links"><a href="index.html">Home</a><a href="sobre.html">Sobre</a><a href="servicos.html">Serviços</a><a href="diagnostico.html">Diagnóstico</a><a href="contato.html">Contato</a></div>
-    <div class="footer-contact"><p><i class="bi bi-envelope-fill"></i> contato@leadup.com.br</p><p><i class="bi bi-telephone-fill"></i> (11) 9 4155-3416</p><p style="margin-top:12px; opacity:.5; font-size:.7rem">© 2026 Lead Up Consultoria &amp; Treinamento</p></div>
+    <div class="footer-links"><a href="Home.html">Home</a><a href="sobre.html">Sobre</a><a href="servicos.html">Serviços</a><a href="diagnostico.html">Diagnóstico</a><a href="contato.html">Contato</a></div>
+    <div class="footer-contact"><p><i class="bi bi-envelope-fill"></i> leadupservices@gmail.com</p><p><i class="bi bi-telephone-fill"></i> (11) 9 4155-3416</p><p style="margin-top:12px; opacity:.5; font-size:.7rem">© 2026 Lead Up Consultoria &amp; Treinamento</p></div>
   </footer>
 
   <a class="whatsapp-btn" href="https://wa.me/5511941553416" target="_blank" title="WhatsApp">

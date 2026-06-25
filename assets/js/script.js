@@ -56,7 +56,7 @@ if (navbar) {
 }
 
 // ── ACTIVE NAV LINK ──
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const currentPage = window.location.pathname.split('/').pop() || 'Home.html';
 document.querySelectorAll('.nav-links a').forEach(a => {
   if (a.getAttribute('href') === currentPage) a.classList.add('nav-active');
 });
@@ -143,9 +143,9 @@ document.querySelectorAll('.ad-btn').forEach(btn => {
   let current = 0, score = 0;
 
   const results = [
-    { icon: '<i class="bi bi-seedling"></i>', title: 'Nível Iniciante', text: 'Sua empresa dá os primeiros passos no marketing. Há muito potencial a ser explorado! A Lead Up pode criar uma base sólida, capacitar sua equipe e colocar sua empresa no caminho certo.' },
-    { icon: '<i class="bi bi-bar-chart-fill"></i>', title: 'Nível em Desenvolvimento', text: 'Você já tem iniciativas de marketing, mas precisam de mais estrutura e consistência. Com a orientação certa, sua empresa pode dobrar o alcance e transformar esforços isolados em resultados reais.' },
-    { icon: '<i class="bi bi-trophy-fill"></i>', title: 'Nível Avançado', text: 'Parabéns! Sua empresa já tem uma boa base de marketing. A Lead Up pode ajudar a otimizar processos, explorar novos canais e escalar os resultados que você já conquista.' }
+    { icon: '<i class="bi bi-seedling"></i>', title: 'Nível Iniciante', text: 'Sua empresa está nos primeiros passos do marketing. Existe um grande potencial a ser explorado. A Lead Up pode construir toda a base estratégica, estruturar seus processos e capacitar sua equipe para gerar resultados consistentes.' },
+    { icon: '<i class="bi bi-bar-chart-fill"></i>', title: 'Nível em Desenvolvimento', text: 'Sua empresa já tem algumas iniciativas de marketing, mas falta estrutura, consistência e integração entre as ações. Com a orientação certa, é possível dobrar seu alcance e transformar esforços isolados em uma máquina de resultados.' },
+    { icon: '<i class="bi bi-trophy-fill"></i>', title: 'Nível Avançado', text: 'Parabéns! Sua empresa já tem uma base sólida de marketing. A Lead Up pode ajudar a otimizar processos, explorar novos canais, escalar resultados e identificar oportunidades que passam despercebidas no dia a dia.' }
   ];
 
   function updateProgress() {
@@ -171,7 +171,7 @@ document.querySelectorAll('.ad-btn').forEach(btn => {
   function showResult() {
     if (questionsDiv) questionsDiv.classList.add('hidden');
     if (progressWrap) progressWrap.classList.add('hidden');
-    const r = results[score <= 3 ? 0 : score <= 7 ? 1 : 2];
+    const r = results[score <= 12 ? 0 : score <= 24 ? 1 : 2];
     document.getElementById('quizResultIcon').innerHTML = r.icon;
     document.getElementById('quizResultTitle').textContent = r.title;
     document.getElementById('quizResultText').textContent = r.text;
@@ -234,8 +234,34 @@ document.querySelectorAll('.faq-item').forEach(item => {
   form.addEventListener('submit', e => {
     e.preventDefault();
     if (!validate()) return;
-    form.classList.add('hidden');
-    if (sucesso) sucesso.classList.remove('hidden');
+
+    const btn = form.querySelector('.contato-submit');
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+
+    const data = new FormData(form);
+
+    fetch('https://formsubmit.co/ajax/leadupservices@gmail.com', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: data
+    })
+    .then(r => r.json())
+    .then(res => {
+      if (res.success) {
+        form.classList.add('hidden');
+        if (sucesso) sucesso.classList.remove('hidden');
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Enviar mensagem';
+        alert('Erro ao enviar. Tente novamente ou entre em contato pelo WhatsApp.');
+      }
+    })
+    .catch(() => {
+      btn.disabled = false;
+      btn.textContent = 'Enviar mensagem';
+      alert('Erro ao enviar. Tente novamente ou entre em contato pelo WhatsApp.');
+    });
   });
 
   form.querySelectorAll('input, select, textarea').forEach(el => {

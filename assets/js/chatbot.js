@@ -66,9 +66,9 @@
         label: 'Diagnóstico Gratuito',
         icon: 'bi-clipboard2-pulse-fill',
         items: [
-          { q: 'A Lead Up tem algum diagnóstico gratuito?', a: 'Sim! Temos um Diagnóstico de Marketing 100% gratuito, com 5 perguntas rápidas, disponível na página "Diagnóstico" do nosso site. Em poucos minutos você descobre o nível de marketing da sua empresa: Iniciante, Em Desenvolvimento ou Avançado.', kw: ['diagnóstico gratuito', 'diagnostico gratuito', 'diagnostico gratis', 'grátis', 'gratis', 'teste gratuito', 'quiz'] },
-          { q: 'Quanto tempo leva o diagnóstico gratuito?', a: 'Leva só alguns minutos — são 5 perguntas rápidas sobre estratégia, presença digital, ferramentas de marketing, métricas e divulgação.', kw: ['quanto tempo o diagnóstico', 'quanto tempo o diagnostico', '5 perguntas', 'diagnóstico rápido', 'diagnostico rapido'] },
-          { q: 'Onde encontro o diagnóstico gratuito?', a: 'Na página "Diagnóstico", no menu superior do site. Basta responder as 5 perguntas e ver o resultado na hora, com recomendações para sua empresa.', kw: ['onde encontro o diagnóstico', 'onde encontro o diagnostico', 'página diagnóstico', 'pagina diagnostico', 'link do diagnóstico', 'onde fica o diagnóstico'] }
+          { q: 'A Lead Up tem algum diagnóstico gratuito?', a: 'Sim! Temos um Diagnóstico de Marketing 100% gratuito, com 18 perguntas profissionais, disponível na página "Diagnóstico" do nosso site. Em poucos minutos você descobre o nível de marketing da sua empresa: Iniciante, Em Desenvolvimento ou Avançado.', kw: ['diagnóstico gratuito', 'diagnostico gratuito', 'diagnostico gratis', 'grátis', 'gratis', 'teste gratuito', 'quiz'] },
+          { q: 'Quanto tempo leva o diagnóstico gratuito?', a: 'Leva cerca de 5 minutos — são 18 perguntas sobre estratégia, presença digital, branding, funil de vendas, métricas, atendimento, pós-venda e muito mais. Uma avaliação completa como a de um profissional.', kw: ['quanto tempo o diagnóstico', 'quanto tempo o diagnostico', '5 perguntas', '18 perguntas', 'diagnóstico rápido', 'diagnostico rapido'] },
+          { q: 'Onde encontro o diagnóstico gratuito?', a: 'Na página "Diagnóstico", no menu superior do site. Basta responder as 18 perguntas e ver o resultado na hora, com recomendações para sua empresa.', kw: ['onde encontro o diagnóstico', 'onde encontro o diagnostico', 'página diagnóstico', 'pagina diagnostico', 'link do diagnóstico', 'onde fica o diagnóstico'] }
         ]
       },
       {
@@ -86,8 +86,8 @@
         label: 'Contato',
         icon: 'bi-envelope-fill',
         items: [
-          { q: 'Como entro em contato com a Lead Up?', a: 'Você pode falar com a gente pelo formulário na página "Contato", pelo WhatsApp ou pelo e-mail contato@leadup.com.br. Preenchendo o formulário, você recebe uma proposta personalizada em até 24h.', kw: ['como entro em contato', 'falar com a equipe', 'atendimento', 'como falo com vocês', 'como falo com voces'] },
-          { q: 'Qual o e-mail da Lead Up?', a: 'Nosso e-mail é contato@leadup.com.br', kw: ['e-mail', 'email', 'qual o email', 'qual o e-mail'] },
+          { q: 'Como entro em contato com a Lead Up?', a: 'Você pode falar com a gente pelo formulário na página "Contato", pelo WhatsApp ou pelo e-mail leadupservices@gmail.com. Preenchendo o formulário, você recebe uma proposta personalizada em até 24h.', kw: ['como entro em contato', 'falar com a equipe', 'atendimento', 'como falo com vocês', 'como falo com voces'] },
+          { q: 'Qual o e-mail da Lead Up?', a: 'Nosso e-mail é leadupservices@gmail.com', kw: ['e-mail', 'email', 'qual o email', 'qual o e-mail'] },
           { q: 'Qual o telefone ou WhatsApp da Lead Up?', a: 'Nosso telefone/WhatsApp é (11) 9 4155-3416. Você pode clicar no botão verde de WhatsApp no canto da tela para falar com a gente agora mesmo!', kw: ['telefone', 'whatsapp', 'número', 'numero', 'celular', 'contato whatsapp'] },
           { q: 'Em quanto tempo recebo uma resposta?', a: 'Em até 24 horas após o envio do formulário de contato, nossa equipe te responde com uma proposta personalizada.', kw: ['tempo de resposta', 'prazo de resposta', '24h', '24 horas', 'quando vão responder', 'quando vao responder'] },
           { q: 'Como peço um orçamento ou proposta personalizada?', a: 'É simples: preencha o formulário na página "Contato" com seus dados e o principal desafio de marketing da sua empresa, ou fale direto pelo WhatsApp. Nossa equipe te envia uma proposta personalizada em até 24h.', kw: ['orçamento', 'orcamento', 'proposta', 'cotação', 'cotacao', 'proposta personalizada'] }
