@@ -171,7 +171,9 @@ document.querySelectorAll('.ad-btn').forEach(btn => {
   function showResult() {
     if (questionsDiv) questionsDiv.classList.add('hidden');
     if (progressWrap) progressWrap.classList.add('hidden');
-    const r = results[score <= 12 ? 0 : score <= 24 ? 1 : 2];
+    // Pontuação máxima = 2 por pergunta que pontua (perguntas só com data-val="0" não entram)
+    const max = [...questions].filter(q => q.querySelector('.quiz-opt:not([data-val="0"])')).length * 2;
+    const r = results[score <= max / 3 ? 0 : score <= (max * 2) / 3 ? 1 : 2];
     document.getElementById('quizResultIcon').innerHTML = r.icon;
     document.getElementById('quizResultTitle').textContent = r.title;
     document.getElementById('quizResultText').textContent = r.text;

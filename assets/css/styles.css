@@ -21,8 +21,11 @@ html[data-theme="dark"] {
   --black:  #EDE9E2;
   --gray:   #9A9490;
   --light:  #1A1714;
-  --accent: #7A6A5A;
+  --accent: #B0A090;
 }
+/* Elementos com fundo claro no modo escuro: mantém o tom escuro para contraste */
+html[data-theme="dark"] .evo-leadup .evo-era,
+html[data-theme="dark"] .chatbot-status { color: #6A5A4A; }
 html[data-theme="dark"] #diferencial,
 html[data-theme="dark"] #sustentabilidade,
 html[data-theme="dark"] footer { background: #0C0A08; }
@@ -32,6 +35,25 @@ html[data-theme="dark"] #diferencial .dif-item h3 { color: #EDE9E2; }
 html[data-theme="dark"] #diferencial .section-label,
 html[data-theme="dark"] #diferencial .section-text,
 html[data-theme="dark"] #diferencial .dif-item p { color: #9A9490; }
+/* Faixas escuras: mantém fundo escuro e letras claras no modo escuro */
+html[data-theme="dark"] .benefits-bar,
+html[data-theme="dark"] .cta-strip { background: #0C0A08; }
+html[data-theme="dark"] .benefits-bar,
+html[data-theme="dark"] .cta-strip,
+html[data-theme="dark"] #sustentabilidade,
+html[data-theme="dark"] #sustentabilidade .section-title,
+html[data-theme="dark"] .sus-item strong,
+html[data-theme="dark"] footer,
+html[data-theme="dark"] .footer-links a:hover { color: #EDE9E2; }
+html[data-theme="dark"] #sustentabilidade .section-label,
+html[data-theme="dark"] #sustentabilidade .section-text,
+html[data-theme="dark"] .sus-item p,
+html[data-theme="dark"] .footer-slogan,
+html[data-theme="dark"] .footer-links a,
+html[data-theme="dark"] .footer-contact,
+html[data-theme="dark"] footer p { color: #B8A898; }
+html[data-theme="dark"] .cta-strip .hero-cta-primary { border-color: #EDE9E2; background: #EDE9E2; color: #1C1C1C !important; }
+html[data-theme="dark"] .cta-strip .hero-cta-primary:hover { background: transparent; color: #EDE9E2 !important; }
 html[data-theme="dark"] .loader-logo { filter: invert(1); }
 html[data-theme="dark"] footer img { filter: invert(1); opacity: .7; }
 html[data-theme="dark"] .whatsapp-btn { box-shadow: 0 4px 20px rgba(37,211,102,.25); }
@@ -457,6 +479,16 @@ section { padding: 100px 60px; }
 }
 .dep-author strong { display: block; font-size: .88rem; }
 .dep-author span { font-size: .75rem; color: var(--accent); }
+.dep-disclaimer {
+  max-width: 640px;
+  margin: 40px auto 0;
+  text-align: center;
+  font-size: .72rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--gray);
+  opacity: .8;
+}
 
 /* ── CONTATO GARANTIA ── */
 .contato-garantia {
@@ -479,10 +511,10 @@ footer {
 footer img { height: 40px; filter: invert(1); opacity: .8; }
 .footer-brand { display: flex; flex-direction: column; gap: 12px; }
 .footer-slogan { font-family: 'Playfair Display', serif; font-style: italic; font-size: .85rem; color: var(--accent); max-width: 180px; line-height: 1.5; }
-.footer-links { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 28px; }
 .footer-links a { text-decoration: none; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); transition: color .2s; }
 .footer-links a:hover { color: var(--cream); }
-.footer-contact { text-align: right; font-size: .82rem; color: var(--accent); display: flex; flex-direction: column; gap: 6px; }
+.footer-contact { text-align: center; align-items: center; font-size: .82rem; color: var(--accent); display: flex; flex-direction: column; gap: 6px; }
 
 /* ── MARKETING EVOLUTION TIMELINE ── */
 #marketing-evo { background: var(--cream); overflow: hidden; }
@@ -783,7 +815,7 @@ footer img { height: 40px; filter: invert(1); opacity: .8; }
 }
 .pacote-tag { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
 .pacote-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; line-height: 1.3; margin-bottom: 16px; min-height: 2.6em; }
-.pacote-price { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.4rem); }
+.pacote-price { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 16px; }
 .pacote-period { font-size: .72rem; color: var(--gray); margin-bottom: 16px; }
 .pacote-desc { font-size: .82rem; color: var(--gray); line-height: 1.6; margin-bottom: 24px; }
 .pacote-checklist { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; flex-grow: 1; }
@@ -879,28 +911,6 @@ footer img { height: 40px; filter: invert(1); opacity: .8; }
 .crono-desc { font-size: .8rem; color: var(--gray); line-height: 1.6; }
 .crono-note { text-align: center; margin-top: 32px; font-size: .85rem; color: var(--gray); }
 
-/* ── NÚMEROS ── */
-#numeros { background: var(--light); }
-.numeros-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
-  margin-top: 60px;
-}
-.numero-item {
-  text-align: center;
-  padding: 48px 24px;
-  border: 1px solid var(--cream2);
-}
-.numero-val {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  font-weight: 900;
-  display: block;
-  margin-bottom: 8px;
-}
-.numero-label { font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gray); }
-
 /* ── EQUIPE ── */
 #equipe { background: var(--cream); }
 .equipe-grid {
@@ -930,6 +940,8 @@ footer img { height: 40px; filter: invert(1); opacity: .8; }
 }
 .membro h3 { font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 6px; }
 .membro p { font-size: .78rem; color: var(--gray); line-height: 1.5; }
+.membro .membro-role { font-weight: 600; letter-spacing: .04em; }
+.membro .membro-desc { margin-top: 14px; font-size: .82rem; line-height: 1.65; }
 
 /* ── SUSTENTABILIDADE ── */
 #sustentabilidade {
@@ -953,6 +965,16 @@ footer img { height: 40px; filter: invert(1); opacity: .8; }
 }
 .sus-item span { font-size: 1.3rem; }
 .sus-item p { font-size: .85rem; color: var(--accent); }
+.sus-item strong { display: block; font-size: .9rem; color: var(--cream); margin-bottom: 4px; }
+.ods-badge {
+  flex-shrink: 0;
+  width: 52px; height: 52px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 1.4rem !important;
+}
 
 /* ── CONCLUSÃO ── */
 #conclusao {
@@ -1001,8 +1023,10 @@ footer {
   color: var(--cream);
   padding: 60px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 24px;
+  text-align: center;
 }
 footer img { height: 40px; filter: invert(1); opacity: .8; }
 footer p { font-size: .75rem; color: var(--accent); }
@@ -1401,7 +1425,7 @@ html[data-theme="dark"] .chatbot-window { box-shadow: 0 16px 48px rgba(0,0,0,.5)
   .nav-hamburger { display: flex; }
   section { padding: 72px 24px; }
   #sobre, #sustentabilidade { grid-template-columns: 1fr; gap: 40px; }
-  .mvv-grid, .equipe-grid, .numeros-grid { grid-template-columns: 1fr; }
+  .mvv-grid, .equipe-grid { grid-template-columns: 1fr; }
   .dif-grid { grid-template-columns: 1fr; }
   .processo-steps { flex-direction: column; gap: 24px; }
   .processo-steps::before { display: none; }
